@@ -2,7 +2,10 @@
 
 namespace Ilslo\Oop;
 
-class Worker
+// TODO: 4. Переробили класс Worker на абстрактний, тим самим даємо зрозуміти, що цей клас, буде відповідати за те,
+// щоб наші конкретні класи, будуть наслідувати ВЛАСТИВОСТІ і МЕТОДИ класа WORKER, за допомогою ключового слова extends
+// А вже від самого абстрактного класа, нові екземпляри класів, створювати змоги не буде
+abstract class Worker
 {
 
   public string $workerName;
@@ -20,9 +23,7 @@ class Worker
     $this->age = $age;
   }
 
-  public function work ()
-  {
-    print_r("i`m {$this->workerName}, and me {$this->age} working");
-  }
+  // TODO: 4.1 Відповідно метод також робимо абстрактним
+  abstract public function work ();
 
 }
