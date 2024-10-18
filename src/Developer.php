@@ -2,7 +2,7 @@
 
 namespace Ilslo\Oop;
 
-class Developer extends Worker
+class Developer extends Worker implements WorkerInterface
 {
   // TODO: 1. приклад того, як клас Developer, наслідує і переоприділяє клас Worker
   // А наслідує він властивості з конструктором з кладу Worker а в класі Developer перевизначає метод work
