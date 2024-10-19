@@ -7,23 +7,43 @@ namespace Ilslo\Oop;
 // А вже від самого абстрактного класа, нові екземпляри класів, створювати змоги не буде
 abstract class Worker
 {
+    use HasRest;
+    public string $workerName;
+    public int $age;
 
-  public string $workerName;
-  public int $age;
+    /** TODO: 2. Рівні доступів
+     * public - властивість\метод доступна всім і всюди
+     * protected - властивість\метод доступна тільки в класах наслідниках
+     * private - властивість\метод доступна тільки в класі в якому об'явлена
+     */
 
-  /** TODO: 2. Рівні доступів
-   * public - властивість\метод доступна всім і всюди
-   * protected - властивість\метод доступна тільки в класах наслідниках
-   * private - властивість\метод доступна тільки в класі в якому об'явлена
-   */
+    public function __construct ($workerName , $age)
+    {
+        $this->workerName = $workerName;
+        $this->age = $age;
+    }
 
-  public function __construct ($workerName , $age)
-  {
-    $this->workerName = $workerName;
-    $this->age = $age;
-  }
+    // TODO: 4.1 Відповідно метод також робимо абстрактним
+    abstract public function work ();
 
-  // TODO: 4.1 Відповідно метод також робимо абстрактним
-  abstract public function work ();
+    public function getWorkerName () : string
+    {
+        return $this->workerName;
+    }
+
+    public function setWorkerName (string $workerName) : void
+    {
+        $this->workerName = $workerName;
+    }
+
+    public function getAge () : int
+    {
+        return $this->age;
+    }
+
+    public function setAge (int $age) : void
+    {
+        $this->age = $age;
+    }
 
 }

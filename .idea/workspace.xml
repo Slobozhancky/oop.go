@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cbe91b5-3cfe-4614-a615-db2a4f17835a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WorkerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HasRest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Developer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Developer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "5-interfaces",
+    "git-widget-placeholder": "6-traits",
     "last_opened_file_path": "C:/OSPanel/home/oop.go",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729249326530</updated>
       <workItem from="1729249327567" duration="8381000" />
-      <workItem from="1729283113005" duration="734000" />
+      <workItem from="1729283113005" duration="2168000" />
     </task>
     <servers />
   </component>
